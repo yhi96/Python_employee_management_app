@@ -29,7 +29,17 @@ def test_manager_salary():
     dev2 = Developer("Dev", "2", 1900, 5)
     team = [dev1, dev2]
     manager = Manager("Sofia", "Hristova", 4500, 15, team)
-    assert manager.calculate_salary() == 6490
+    assert manager.calculate_salary() == 7139
+
+def test_manager_salary_with_greater_dev_team():
+    dev1 = Developer("Dev", "1", 3000, 3)
+    dev2 = Developer("Dev", "2", 3500, 5)
+    designer = Designer("Designer", "1", 2500, 2, 1.0)
+
+    team = [dev1, dev2, designer]
+    manager = Manager("Niki", "Vasilkovski", 5000, 7, team)
+    
+    assert manager.calculate_salary() == 7865
 
 def test_manager_no_team_salary():
     manager = Manager("Sofia", "Hristova", 2500, 2,)
@@ -44,4 +54,4 @@ def test_department_salary(capfd):
     out, err = capfd.readouterr()
 
     assert "Dev 1 received: 3200 money." in out
-    assert "Niki Vasilkovski received: 7150 money." in out
+    assert "Niki Vasilkovski received: 7865 money." in out

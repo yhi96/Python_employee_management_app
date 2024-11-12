@@ -1,0 +1,42 @@
+[
+    {
+        "first_name": "Sofia",
+        "last_name": "Hristova",
+        "base_salary": 2000,
+        "experience": 6,
+        "team": [
+            {
+                "type": "Developer",
+                "first_name": "Nikoleta",
+                "last_name": "Georgieva",
+                "base_salary": 1500,
+                "experience": 4,
+                "eff_coeff": null
+            },
+            {
+                "type": "Designer",
+                "first_name": "Ivan",
+                "last_name": "Dimitrov",
+                "base_salary": 1000,
+                "experience": 6,
+                "eff_coeff": 0.5
+            }
+        ]
+    },
+    {
+        "first_name": "Hristo",
+        "last_name": "Atanasov",
+        "base_salary": 1200,
+        "experience": 7,
+        "team": [
+            {
+                "type": "Developer",
+                "first_name": "Stanislava",
+                "last_name": "Nikolova",
+                "base_salary": 1500,
+                "experience": 3,
+                "eff_coeff": null
+            }
+        ]
+    }
+]
